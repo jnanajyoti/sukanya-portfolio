@@ -1,0 +1,23 @@
+.wrapper {
+  overflow: hidden;
+  height: 48px;
+  color: var(--color-accent);
+  opacity: 0.3;
+  pointer-events: none;
+  line-height: 0;
+}
+
+.flip {
+  transform: scaleY(-1);
+}
+
+.wave {
+  width: 200%;
+  height: 100%;
+  animation: waveDrift 8s linear infinite;
+}
+
+@keyframes waveDrift {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}

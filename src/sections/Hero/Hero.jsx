@@ -7,6 +7,9 @@ export default function Hero() {
       <div className={styles.content}>
         <div className={styles.avatar}>
           <img src="/profile.png" alt={profile.name} className={styles.avatarImg} />
+          <span className={styles.orbit} aria-hidden="true" />
+          <span className={`${styles.orbit} ${styles.orbit2}`} aria-hidden="true" />
+          <span className={`${styles.orbit} ${styles.orbit3}`} aria-hidden="true" />
         </div>
         <h1 className={styles.name}>{profile.name}</h1>
         <p className={styles.title}>{profile.title}</p>

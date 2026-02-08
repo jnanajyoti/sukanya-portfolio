@@ -4,11 +4,32 @@
   align-items: center;
   justify-content: center;
   padding: calc(var(--navbar-height) + var(--space-3xl)) var(--space-lg) var(--space-3xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, var(--color-accent) 1.5px, transparent 1.5px);
+  background-size: 40px 40px;
+  opacity: 0.08;
+  animation: latticePulse 4s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes latticePulse {
+  0%, 100% { opacity: 0.06; }
+  50% { opacity: 0.14; }
 }
 
 .content {
   text-align: center;
   max-width: 700px;
+  position: relative;
+  z-index: 1;
 }
 
 .avatar {
@@ -22,6 +43,9 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0 8px 32px var(--color-shadow);
+  position: relative;
+  perspective: 400px;
+  transform-style: preserve-3d;
 }
 
 .avatarImg {
@@ -87,6 +111,53 @@
   border-color: var(--color-primary);
 }
 
+.orbit {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  top: 50%;
+  left: 50%;
+  margin: -3px 0 0 -3px;
+  pointer-events: none;
+  box-shadow: 0 0 8px rgba(196, 154, 42, 0.6);
+  animation: orbitSpin1 6s linear infinite;
+}
+
+@keyframes orbitSpin1 {
+  from { transform: rotate(0deg) translateX(90px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(90px) rotate(-360deg); }
+}
+
+.orbit2 {
+  width: 4px;
+  height: 4px;
+  margin: -2px 0 0 -2px;
+  opacity: 0.7;
+  animation: orbitSpin2 8s linear infinite;
+  animation-delay: -2s;
+}
+
+@keyframes orbitSpin2 {
+  from { transform: rotateX(60deg) rotate(0deg) translateX(95px) rotate(0deg); }
+  to { transform: rotateX(60deg) rotate(360deg) translateX(95px) rotate(-360deg); }
+}
+
+.orbit3 {
+  width: 5px;
+  height: 5px;
+  margin: -2.5px 0 0 -2.5px;
+  opacity: 0.5;
+  animation: orbitSpin3 10s linear infinite;
+  animation-delay: -5s;
+}
+
+@keyframes orbitSpin3 {
+  from { transform: rotateX(-45deg) rotate(0deg) translateX(85px) rotate(0deg); }
+  to { transform: rotateX(-45deg) rotate(360deg) translateX(85px) rotate(-360deg); }
+}
+
 .scrollHint {
   animation: bounce 2s ease infinite;
   color: var(--color-text-tertiary);
@@ -116,5 +187,9 @@
 
   .title {
     font-size: var(--text-lg);
+  }
+
+  .orbit3 {
+    display: none;
   }
 }
