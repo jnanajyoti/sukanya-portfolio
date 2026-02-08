@@ -6,7 +6,7 @@ export default function Hero() {
     <section id="about" className={styles.hero}>
       <div className={styles.content}>
         <div className={styles.avatar}>
-          <span className={styles.avatarInitial}>SD</span>
+          <img src="/profile.png" alt={profile.name} className={styles.avatarImg} />
         </div>
         <h1 className={styles.name}>{profile.name}</h1>
         <p className={styles.title}>{profile.title}</p>
