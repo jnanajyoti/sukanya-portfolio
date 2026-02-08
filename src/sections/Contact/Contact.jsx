@@ -29,6 +29,9 @@ export default function Contact() {
             <a href={profile.links.linkedin} target="_blank" rel="noopener noreferrer" className={styles.linkBtn}>
               LinkedIn
             </a>
+            <a href="/Sukanya_Dutta_CV.pdf" download className={styles.linkBtn}>
+              Download CV
+            </a>
           </div>
         </div>
 

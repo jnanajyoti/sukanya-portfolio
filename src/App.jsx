@@ -5,6 +5,7 @@ import Hero from './sections/Hero/Hero';
 import Research from './sections/Research/Research';
 import Publications from './sections/Publications/Publications';
 import Education from './sections/Education/Education';
+import Awards from './sections/Awards/Awards';
 import Skills from './sections/Skills/Skills';
 import Leadership from './sections/Leadership/Leadership';
 import Contact from './sections/Contact/Contact';
@@ -22,10 +23,12 @@ export default function App() {
         <WaveDivider />
         <Education />
         <WaveDivider flip />
-        <Skills />
+        <Awards />
         <WaveDivider />
-        <Leadership />
+        <Skills />
         <WaveDivider flip />
+        <Leadership />
+        <WaveDivider />
         <Contact />
       </main>
       <Footer />

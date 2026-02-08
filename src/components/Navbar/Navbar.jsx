@@ -8,6 +8,7 @@ const NAV_LINKS = [
   { id: 'research', label: 'Research' },
   { id: 'publications', label: 'Publications' },
   { id: 'education', label: 'Education' },
+  { id: 'awards', label: 'Awards' },
   { id: 'skills', label: 'Skills' },
   { id: 'leadership', label: 'Leadership' },
   { id: 'contact', label: 'Contact' },

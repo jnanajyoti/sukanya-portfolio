@@ -8,22 +8,6 @@
   overflow: hidden;
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(circle, var(--color-accent) 1.5px, transparent 1.5px);
-  background-size: 40px 40px;
-  opacity: 0.08;
-  animation: latticePulse 4s ease-in-out infinite;
-  pointer-events: none;
-  z-index: 0;
-}
-
-@keyframes latticePulse {
-  0%, 100% { opacity: 0.06; }
-  50% { opacity: 0.14; }
-}
 
 .content {
   text-align: center;
