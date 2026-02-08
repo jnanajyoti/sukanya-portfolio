@@ -1,0 +1,77 @@
+:root {
+  /* Colors */
+  --color-primary: #1B3A5C;
+  --color-primary-light: #2D5F8A;
+  --color-accent: #C49A2A;
+  --color-accent-light: #D4B04A;
+
+  --color-bg-primary: #FAFBFC;
+  --color-bg-secondary: #F0F2F5;
+  --color-bg-card: #FFFFFF;
+
+  --color-text-primary: #1A1A2E;
+  --color-text-secondary: #4A5568;
+  --color-text-tertiary: #718096;
+
+  --color-border: #E2E8F0;
+  --color-shadow: rgba(27, 58, 92, 0.08);
+
+  /* Typography */
+  --font-heading: 'Libre Baskerville', 'Georgia', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.75;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-section: 6rem;
+
+  /* Layout */
+  --max-width: 1100px;
+  --navbar-height: 64px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+}
+
+[data-theme='dark'] {
+  --color-primary: #5B9BD5;
+  --color-primary-light: #7CB3E0;
+  --color-accent: #D4B04A;
+  --color-accent-light: #E0C46A;
+
+  --color-bg-primary: #0F1218;
+  --color-bg-secondary: #1A1F2E;
+  --color-bg-card: #1E2433;
+
+  --color-text-primary: #E8ECF1;
+  --color-text-secondary: #A0AEC0;
+  --color-text-tertiary: #718096;
+
+  --color-border: #2D3748;
+  --color-shadow: rgba(0, 0, 0, 0.3);
+}

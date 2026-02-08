@@ -1,0 +1,124 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--navbar-height) + var(--space-3xl)) var(--space-lg) var(--space-3xl);
+}
+
+.content {
+  text-align: center;
+  max-width: 700px;
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 0 auto var(--space-xl);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  border: 3px solid var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 32px var(--color-shadow);
+}
+
+.avatarInitial {
+  font-family: var(--font-heading);
+  font-size: var(--text-4xl);
+  font-weight: 700;
+  color: #fff;
+}
+
+.name {
+  font-family: var(--font-heading);
+  font-size: var(--text-5xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-sm);
+}
+
+.title {
+  font-size: var(--text-xl);
+  color: var(--color-primary);
+  font-weight: 500;
+  margin-bottom: var(--space-xs);
+}
+
+.affiliation {
+  font-size: var(--text-lg);
+  color: var(--color-text-tertiary);
+  margin-bottom: var(--space-xl);
+}
+
+.bio {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-xl);
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-3xl);
+}
+
+.linkBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--border-radius-full);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-primary);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-fast);
+}
+
+.linkBtn:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+
+.scrollHint {
+  animation: bounce 2s ease infinite;
+  color: var(--color-text-tertiary);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+}
+
+@media (max-width: 768px) {
+  .name {
+    font-size: var(--text-3xl);
+  }
+
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .avatarInitial {
+    font-size: var(--text-2xl);
+  }
+
+  .title {
+    font-size: var(--text-lg);
+  }
+}
