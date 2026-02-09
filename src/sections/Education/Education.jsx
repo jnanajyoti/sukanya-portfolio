@@ -16,6 +16,9 @@ function TimelineItem({ entry }) {
           {entry.institution}, {entry.location}
         </p>
         <p className={styles.gpa}>GPA: {entry.gpa}</p>
+        {entry.note && (
+          <p className={styles.note}>{entry.note}</p>
+        )}
         {entry.awards.length > 0 && (
           <div className={styles.awards}>
             {entry.awards.map((award) => (

@@ -83,6 +83,13 @@
   color: var(--color-text-tertiary);
 }
 
+.note {
+  font-size: var(--text-xs);
+  font-style: italic;
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}
+
 .awards {
   margin-top: var(--space-sm);
   display: flex;
