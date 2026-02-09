@@ -70,6 +70,26 @@
   color: #fff;
 }
 
+.extLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: none;
+  padding: 4px 12px;
+  border-radius: var(--border-radius-full);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-fast);
+}
+
+.extLink:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+
 @media (max-width: 640px) {
   .header {
     flex-direction: column;

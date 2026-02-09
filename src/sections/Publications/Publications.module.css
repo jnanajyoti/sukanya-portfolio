@@ -64,9 +64,14 @@
   vertical-align: middle;
 }
 
-.doi {
-  display: inline-block;
+.links {
+  display: flex;
+  gap: var(--space-sm);
   margin-top: var(--space-sm);
+}
+
+.doi {
+  display: inline-flex;
   font-size: var(--text-xs);
   font-weight: 600;
   padding: 2px 10px;
@@ -78,5 +83,24 @@
 
 .doi:hover {
   background-color: var(--color-primary);
+  color: #fff;
+}
+
+.newsLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.newsLink:hover {
+  background-color: var(--color-accent);
   color: #fff;
 }

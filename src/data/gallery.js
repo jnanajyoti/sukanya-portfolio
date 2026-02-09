@@ -60,7 +60,7 @@ export const travelGroups = [
   {
     destination: 'Portland',
     location: 'Oregon',
-    cover: '/gallery/personal/portland-multnomah-falls.jpeg',
+    cover: '/gallery/personal/portland-botanical.jpeg',
     photos: [
       { src: '/gallery/personal/portland-multnomah-falls.jpeg', caption: 'Multnomah Falls', alt: 'Multnomah Falls in the Columbia River Gorge, Oregon' },
       { src: '/gallery/personal/portland-botanical.jpeg', caption: 'Portland Botanical Garden', alt: 'Portland International Rose Test Garden' },
@@ -87,7 +87,7 @@ export const travelGroups = [
   {
     destination: 'Pittsburgh',
     location: 'Pennsylvania',
-    cover: '/gallery/personal/pittsburgh-lantern-festival.jpeg',
+    cover: '/gallery/personal/pittsburgh-three-rivers.jpeg',
     photos: [
       { src: '/gallery/personal/pittsburgh-lantern-festival.jpeg', caption: 'Lantern Festival', alt: 'Chinese Lantern Festival in Pittsburgh' },
       { src: '/gallery/personal/pittsburgh-three-rivers.jpeg', caption: 'The Point \u2014 Three Rivers', alt: 'The Point where three rivers meet in Pittsburgh' },

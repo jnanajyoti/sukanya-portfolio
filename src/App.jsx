@@ -24,9 +24,9 @@ export default function App() {
         <WaveDivider flip />
         <Publications />
         <WaveDivider />
-        <Conferences />
-        <WaveDivider flip />
         <Education />
+        <WaveDivider flip />
+        <Conferences />
         <WaveDivider />
         <Awards />
         <WaveDivider flip />

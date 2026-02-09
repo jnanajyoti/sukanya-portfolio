@@ -80,6 +80,7 @@ export const publications = [
     issue: '3',
     pages: null,
     doi: 'https://doi.org/10.1073/pnas.2217035120',
+    newsLink: 'https://news.rice.edu/news/2023/nanoparticles-make-it-easier-turn-light-solvated-electrons',
     status: 'published',
     highlightAuthor: 'Dutta, S.',
   },
