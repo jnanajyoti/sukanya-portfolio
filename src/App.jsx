@@ -10,6 +10,7 @@ import Awards from './sections/Awards/Awards';
 import Skills from './sections/Skills/Skills';
 import Teaching from './sections/Teaching/Teaching';
 import Leadership from './sections/Leadership/Leadership';
+import Gallery from './sections/Gallery/Gallery';
 import Contact from './sections/Contact/Contact';
 
 export default function App() {
@@ -35,6 +36,8 @@ export default function App() {
         <WaveDivider flip />
         <Leadership />
         <WaveDivider />
+        <Gallery />
+        <WaveDivider flip />
         <Contact />
       </main>
       <Footer />
