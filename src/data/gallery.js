@@ -28,6 +28,7 @@ export const academicPhotos = [
     src: '/gallery/academic/oral-exam-crawfish.jpeg',
     caption: 'Celebrating Oral Exam with Crawfish Boil',
     alt: 'Sukanya celebrating passing her oral exam with a crawfish boil',
+    objectPosition: 'top',
   },
 ];
 

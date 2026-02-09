@@ -20,6 +20,7 @@ function AcademicGrid({ onPhotoClick }) {
             src={photo.src}
             alt={photo.alt}
             loading="lazy"
+            style={photo.objectPosition ? { objectPosition: photo.objectPosition } : undefined}
           />
           <span className={styles.photoCaption}>{photo.caption}</span>
         </button>
