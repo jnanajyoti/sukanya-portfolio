@@ -6,12 +6,14 @@ import styles from './Education.module.css';
 function TimelineItem({ entry }) {
   return (
     <article className={styles.item}>
-      <div className={styles.dot} />
-      <div className={styles.card}>
-        <div className={styles.header}>
-          <h3 className={styles.degree}>{entry.degree}</h3>
-          <span className={styles.date}>{entry.date}</span>
-        </div>
+      <div className={styles.dateCol}>
+        <span className={styles.date}>{entry.date}</span>
+      </div>
+      <div className={styles.dotCol}>
+        <div className={styles.dot} />
+      </div>
+      <div className={styles.card} data-date={entry.date}>
+        <h3 className={styles.degree}>{entry.degree}</h3>
         <p className={styles.institution}>
           {entry.institution}, {entry.location}
         </p>

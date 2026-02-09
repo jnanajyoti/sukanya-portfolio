@@ -10,39 +10,79 @@
 
 .timeline {
   position: relative;
-  padding-left: 32px;
 }
 
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 7px;
-  top: 8px;
-  bottom: 8px;
-  width: 2px;
-  background-color: var(--color-border);
-}
+/* ── Each timeline row: date | dot | card ── */
 
 .item {
-  position: relative;
+  display: grid;
+  grid-template-columns: 160px 24px 1fr;
+  gap: 0 var(--space-md);
   padding-bottom: var(--space-xl);
+  position: relative;
 }
 
 .item:last-child {
   padding-bottom: 0;
 }
 
-.dot {
+/* Left column — date range */
+
+.dateCol {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-top: var(--space-lg);
+}
+
+.date {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-accent);
+  text-align: right;
+  line-height: var(--line-height-normal);
+}
+
+/* Center column — dot + vertical line */
+
+.dotCol {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.dotCol::before {
+  content: '';
   position: absolute;
-  left: -32px;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background-color: var(--color-border);
+}
+
+.item:first-child .dotCol::before {
   top: 8px;
-  width: 16px;
-  height: 16px;
+}
+
+.item:last-child .dotCol::before {
+  bottom: calc(100% - 28px);
+}
+
+.dot {
+  position: relative;
+  top: calc(var(--space-lg) + 2px);
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background-color: var(--color-accent);
   border: 3px solid var(--color-bg-secondary);
   z-index: 1;
+  flex-shrink: 0;
 }
+
+/* Right column — card */
 
 .card {
   background-color: var(--color-bg-card);
@@ -51,25 +91,11 @@
   box-shadow: 0 2px 8px var(--color-shadow);
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: var(--space-md);
-  margin-bottom: var(--space-xs);
-}
-
 .degree {
   font-size: var(--text-lg);
   font-weight: 600;
   color: var(--color-text-primary);
-}
-
-.date {
-  font-size: var(--text-sm);
-  color: var(--color-text-tertiary);
-  white-space: nowrap;
-  flex-shrink: 0;
+  margin-bottom: var(--space-xs);
 }
 
 .institution {
@@ -106,9 +132,24 @@
   color: #fff;
 }
 
+/* ── Mobile: collapse to single column ── */
+
 @media (max-width: 640px) {
-  .header {
-    flex-direction: column;
-    gap: var(--space-xs);
+  .item {
+    grid-template-columns: 24px 1fr;
+    gap: 0 var(--space-sm);
+  }
+
+  .dateCol {
+    display: none;
+  }
+
+  .card::before {
+    content: attr(data-date);
+    display: block;
+    font-size: var(--text-xs);
+    font-weight: 600;
+    color: var(--color-accent);
+    margin-bottom: var(--space-xs);
   }
 }
