@@ -1,0 +1,92 @@
+export const conferences = [
+  {
+    name: 'Gordon Research Conferences (GRC): Plasmonically Powered Processes',
+    location: 'Ventura, CA',
+    year: 2025,
+    presentation: 'Oral and poster: Solvated Electron Generation from Coupled Plasmon Modes of Gold using Visible Light',
+  },
+  {
+    name: 'Changwoo Park \u2013 Walter Klemperer Inorganic and Materials Chemistry Allerton Conference (PK-IMAC)',
+    location: 'University of Illinois Urbana-Champaign',
+    year: 2024,
+    presentation: 'Oral: Mechanism for plasmon-generated solvated electrons',
+  },
+  {
+    name: '77th International Symposium on Molecular Spectroscopy (ISMS)',
+    location: 'University of Illinois Urbana-Champaign',
+    year: 2024,
+    presentation: 'Oral: Effect of plasmon excitation on surface versus bulk emission of solvated electrons into water',
+  },
+  {
+    name: '10th International Conference on Surface Plasmon Photonics (SPP10)',
+    location: 'Rice University',
+    year: 2023,
+    presentation: 'Poster: Effect of plasmon excitation on surface versus bulk emission of solvated electrons into water',
+  },
+  {
+    name: 'ACS Fall 2023: Harnessing the Power of Data',
+    location: 'San Francisco, CA',
+    year: 2023,
+    presentation: 'Poster: Effect of plasmon excitation on surface versus bulk emission of solvated electrons into water',
+  },
+  {
+    name: 'ComSciCon Houston',
+    location: 'Rice University',
+    year: 2023,
+    presentation: null,
+  },
+  {
+    name: 'Welch Conference on Chemical Research',
+    location: 'The Welch Foundation',
+    year: 2022,
+    presentation: null,
+  },
+  {
+    name: 'ComSciCon Houston',
+    location: 'Rice University',
+    year: 2022,
+    presentation: 'Elevator pitch and write-a-thon peer review session',
+  },
+  {
+    name: 'CRIKC Chemistry Symposium',
+    location: 'IISER Mohali',
+    year: 2019,
+    presentation: null,
+  },
+  {
+    name: '26th National Conference on Liquid Crystals (NCLC)',
+    location: 'Chitkara University, Punjab',
+    year: 2019,
+    presentation: null,
+  },
+  {
+    name: 'Ultrafast X-Ray Summer School (UXSS)',
+    location: 'DESY, Hamburg',
+    year: 2019,
+    presentation: 'Poster: Probing ultrafast photodynamics involving H-transfer using hard X-ray elastic and inelastic scattering',
+  },
+  {
+    name: 'Augmenting Writing Skills for Articulating Research (AWSAR)',
+    location: 'IISER Mohali',
+    year: 2018,
+    presentation: null,
+  },
+  {
+    name: 'International Seminar on Chemistry and Its Relevance to Environmental Biology (CREB)',
+    location: "St. Xavier's College, Kolkata",
+    year: 2018,
+    presentation: null,
+  },
+  {
+    name: 'National Symposium on Facets of Chemistry in Materials & Biology (FOCMB)',
+    location: "St. Xavier's College, Kolkata",
+    year: 2018,
+    presentation: 'Poster: Awarded 3rd position for Adaptive Random Mutation Hill Climbing',
+  },
+  {
+    name: 'Asian Meeting on Metal Oxide Assemblies (AMMOA) \u2013 GIAN 2017',
+    location: 'IISER Kolkata',
+    year: 2017,
+    presentation: null,
+  },
+];

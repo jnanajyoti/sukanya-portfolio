@@ -7,9 +7,11 @@ const NAV_LINKS = [
   { id: 'about', label: 'About' },
   { id: 'research', label: 'Research' },
   { id: 'publications', label: 'Publications' },
+  { id: 'conferences', label: 'Conferences' },
   { id: 'education', label: 'Education' },
   { id: 'awards', label: 'Awards' },
   { id: 'skills', label: 'Skills' },
+  { id: 'teaching', label: 'Teaching' },
   { id: 'leadership', label: 'Leadership' },
   { id: 'contact', label: 'Contact' },
 ];

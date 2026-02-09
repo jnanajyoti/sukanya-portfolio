@@ -1,12 +1,12 @@
 export const researchProjects = [
   {
-    id: 'plasmonic-lattices',
-    title: 'Finite Plasmonic Nanoparticle Lattices',
+    id: 'bimetallic-plasmon',
+    title: 'Plasmon Damping in Bimetallic Nanoparticles',
     dateRange: '2025 – Present',
     lab: 'Link Lab',
     affiliation: 'University of Illinois Urbana-Champaign',
     description:
-      'Fabricating and characterizing finite nanoparticle lattices using polymer pen lithography (TERA-print) to study surface lattice resonance modes and collective optical responses in engineered arrays.',
+      'Fabricate and characterize bimetallic nanoparticles using polymer pen lithography (TERA-print) to study plasmon damping.',
     techniques: ['TERA-print', 'SEM', 'Dark-field Microscopy', 'FDTD Simulations'],
   },
   {
@@ -16,7 +16,7 @@ export const researchProjects = [
     lab: 'Link Lab',
     affiliation: 'Rice University & UIUC',
     description:
-      'Studying the mechanistic shift from bulk to surface photoemission with decreasing nanoparticle size, investigating coupled gold plasmon modes with high electric fields, and establishing the mechanism of plasmon-generated solvated electron mediated reductive organic photocatalysis under visible light.',
+      'Investigate the role of coupled gold plasmon modes with high electric fields for solvated electron generation in organic solvents. Establish the mechanism of plasmon-generated solvated electron mediated degradation of waste water contaminants under electrochemical bias.',
     techniques: ['UV-Vis', 'Electrochemistry', 'Single-particle Spectroscopy', 'MATLAB'],
   },
   {
@@ -26,7 +26,7 @@ export const researchProjects = [
     lab: 'Pal Lab',
     affiliation: 'IISER Mohali, India',
     description:
-      'Studied self-assembly of non-ionic surfactants at liquid crystal–water interfaces for drug delivery applications, tailoring mesophase assemblies for enzyme-triggered encapsulation and release.',
+      'Studied self-assembly of non-ionic surfactants at liquid crystal\u2013water interfaces for drug delivery applications, tailoring mesophase assemblies for enzyme-triggered encapsulation and release.',
     techniques: ['Polarized Optical Microscopy', 'DLS', 'NMR', 'LC-MS'],
   },
 ];

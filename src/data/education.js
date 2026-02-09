@@ -3,7 +3,7 @@ export const education = [
     degree: 'Ph.D. Physical Chemistry',
     institution: 'University of Illinois Urbana-Champaign',
     location: 'IL, USA',
-    date: 'Expected Summer 2026',
+    date: 'Exp. May 2026',
     gpa: '4.00 / 4.00',
     awards: [],
   },

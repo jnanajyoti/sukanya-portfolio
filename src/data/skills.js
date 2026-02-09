@@ -5,7 +5,7 @@ export const skillCategories = [
   },
   {
     category: 'Simulation & Software',
-    items: ['Lumerical FDTD', 'Gnuplot', 'ChemDraw', 'Origin', 'ImageJ', 'Gaussian 09'],
+    items: ['Blender', 'Lumerical FDTD', 'Gnuplot', 'ChemDraw', 'Origin', 'ImageJ', 'Gaussian 09'],
   },
   {
     category: 'Fabrication',
@@ -19,7 +19,7 @@ export const skillCategories = [
   },
   {
     category: 'Characterization',
-    items: ['SEM', 'TEM', 'Dynamic Light Scattering', 'NMR', 'LC-MS', 'HPLC'],
+    items: ['SEM', 'TEM', 'EDS', 'AFM', 'Dynamic Light Scattering', 'NMR', 'LC-MS', 'HPLC'],
   },
   {
     category: 'Optical Techniques',
