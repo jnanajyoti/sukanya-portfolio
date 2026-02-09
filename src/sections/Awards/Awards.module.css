@@ -54,6 +54,75 @@
   color: var(--color-primary);
 }
 
+/* ── Travel Awards expandable tile ── */
+
+.travelCard {
+  cursor: pointer;
+  user-select: none;
+}
+
+.travelHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.chevron {
+  color: var(--color-text-secondary);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.travelList {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, margin-top 0.4s ease;
+  margin-top: 0;
+}
+
+.travelListOpen {
+  max-height: 400px;
+  margin-top: var(--space-lg);
+}
+
+.travelItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: var(--space-sm) var(--space-md);
+  border-left: 3px solid var(--color-accent);
+  text-align: left;
+  margin-bottom: var(--space-sm);
+  background-color: var(--color-bg-secondary);
+  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+}
+
+.travelItem:last-child {
+  margin-bottom: 0;
+}
+
+.travelItemTitle {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.travelItemOrg {
+  font-size: var(--text-xs);
+  color: var(--color-text-tertiary);
+}
+
+.travelItemYear {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
