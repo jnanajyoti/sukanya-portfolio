@@ -37,7 +37,7 @@ function PublicationCard({ pub, index }) {
             <span className={styles.badgePrep}>In Preparation</span>
           )}
         </p>
-        {(pub.doi || pub.newsLink) && (
+        {(pub.doi || pub.pressLinks?.length) && (
           <div className={styles.links}>
             {pub.doi && (
               <a
@@ -49,9 +49,10 @@ function PublicationCard({ pub, index }) {
                 DOI
               </a>
             )}
-            {pub.newsLink && (
+            {pub.pressLinks?.map((pl) => (
               <a
-                href={pub.newsLink}
+                key={pl.url}
+                href={pl.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.newsLink}
@@ -59,9 +60,9 @@ function PublicationCard({ pub, index }) {
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2" />
                 </svg>
-                Press
+                {pl.label}
               </a>
-            )}
+            ))}
           </div>
         )}
       </div>
