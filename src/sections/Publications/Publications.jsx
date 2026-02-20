@@ -33,6 +33,9 @@ function PublicationCard({ pub, index }) {
           {pub.status === 'submitted' && (
             <span className={styles.badge}>Submitted</span>
           )}
+          {pub.status === 'in preparation' && (
+            <span className={styles.badgePrep}>In Preparation</span>
+          )}
         </p>
         {(pub.doi || pub.newsLink) && (
           <div className={styles.links}>

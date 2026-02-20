@@ -64,6 +64,18 @@
   vertical-align: middle;
 }
 
+.badgePrep {
+  display: inline-block;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: var(--border-radius-full);
+  background-color: var(--color-text-tertiary);
+  color: #fff;
+  margin-left: var(--space-sm);
+  vertical-align: middle;
+}
+
 .links {
   display: flex;
   gap: var(--space-sm);
