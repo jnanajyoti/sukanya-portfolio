@@ -66,7 +66,7 @@ export const publications = [
     volume: null,
     pages: null,
     doi: null,
-    status: 'submitted',
+    status: 'published',
     highlightAuthor: 'Dutta, S.',
   },
   {
