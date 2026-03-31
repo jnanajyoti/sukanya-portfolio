@@ -62,7 +62,7 @@ export const publications = [
     title:
       'Solvated Electron Generation from Coupled Plasmon Modes of Gold Using Visible Light',
     journal: 'Nano Lett.',
-    year: 'submitted',
+    year: 'accepted',
     volume: null,
     pages: null,
     doi: null,
