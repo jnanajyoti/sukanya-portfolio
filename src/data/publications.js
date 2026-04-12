@@ -65,7 +65,7 @@ export const publications = [
     year: 'accepted',
     volume: null,
     pages: null,
-    doi: null,
+    doi: 'https://doi.org/10.1021/acs.nanolett.5c05166',
     status: 'published',
     highlightAuthor: 'Dutta, S.',
   },
