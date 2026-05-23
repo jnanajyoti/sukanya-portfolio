@@ -2,7 +2,7 @@ export const publications = [
   {
     id: 1,
     authors:
-      'Dutta, S.; Kim, JM.; Landes, C. F.; Link, S.',
+      'Dutta, S.; Gomez, E.; Adhikari, S.; Link, S.',
     title:
       'Plasmon Damping Pathways in Bimetallic Nanoparticles Synthesized using Scanning Probe Block Copolymer Lithography',
     journal: null,
@@ -16,9 +16,9 @@ export const publications = [
   {
     id: 2,
     authors:
-      'Adhikari, S.; Dutta, S.; Gomez, E.; Yuan, T.; Link, S.',
+      'Zhou, S.; Martin, K.; Dutta, S.; Link, S.; Rodríguez-López, J.; Murphy, C.',
     title:
-      'Understanding the Interband vs Intraband Photoluminescence Mechanism of Metal Nanoparticles using Time-resolved Upconversion Microscopy',
+      'Role of plasmon enhancement in alloy nanoparticle mediated electrochemical CO₂ reduction reaction',
     journal: null,
     year: null,
     volume: null,
@@ -29,20 +29,6 @@ export const publications = [
   },
   {
     id: 3,
-    authors:
-      'Zhou, S.; Hazin, G.; Dutta, S.; Link, S.; Rodr\u00edguez-L\u00f3pez, J.; Murphy, C.',
-    title:
-      'Role of plasmon enhancement in alloy nanoparticle mediated electrochemical CO\u2082 reduction reaction',
-    journal: null,
-    year: null,
-    volume: null,
-    pages: null,
-    doi: null,
-    status: 'in preparation',
-    highlightAuthor: 'Dutta, S.',
-  },
-  {
-    id: 4,
     authors:
       'Dutta, S.; Hu, K.; Kim, JM.; Kim, JH.; Landes, C. F.; Link, S.',
     title:
@@ -56,13 +42,27 @@ export const publications = [
     highlightAuthor: 'Dutta, S.',
   },
   {
+    id: 4,
+    authors:
+      'Lee, S.A.; Loirette-Pelous, A.; Adhikari, S.; Ghorai, N.; Kuhs, C.T.; Yuan, T.; Dutta, S.; Esteban, R.; Lian, T.; Azipurua, J.; Link, S.',
+    title:
+      'Resolving athermal electron and hole dynamics in plasmonic photocatalysts',
+    journal: null,
+    year: null,
+    volume: null,
+    pages: null,
+    doi: null,
+    status: 'submitted',
+    highlightAuthor: 'Dutta, S.',
+  },
+  {
     id: 5,
     authors:
       'Dutta, S.; Adhikari, S.; Yoo, J.; Kim, JH.; Al-Zubeidi, A.; Landes, C. F.; Link, S.',
     title:
       'Solvated Electron Generation from Coupled Plasmon Modes of Gold Using Visible Light',
     journal: 'Nano Lett.',
-    year: 'accepted',
+    year: 2026,
     volume: null,
     pages: null,
     doi: 'https://doi.org/10.1021/acs.nanolett.5c05166',
@@ -97,7 +97,7 @@ export const publications = [
     year: 2022,
     volume: '10',
     issue: '16',
-    pages: '3032\u20133038',
+    pages: '3032–3038',
     doi: 'https://doi.org/10.1039/D1TB02799A',
     status: 'published',
     highlightAuthor: 'Dutta, S.',

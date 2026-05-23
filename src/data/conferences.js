@@ -6,6 +6,12 @@ export const conferences = [
     presentation: 'Oral and poster: Solvated Electron Generation from Coupled Plasmon Modes of Gold using Visible Light',
   },
   {
+    name: 'Sylvia M. Stoesser Lecture in Chemistry',
+    location: 'University of Illinois Urbana-Champaign',
+    year: 2025,
+    presentation: 'Organizing committee: guest speaker selection and event hosting',
+  },
+  {
     name: 'Changwoo Park \u2013 Walter Klemperer Inorganic and Materials Chemistry Allerton Conference (PK-IMAC)',
     location: 'University of Illinois Urbana-Champaign',
     year: 2024,
